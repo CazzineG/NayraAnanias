@@ -43,11 +43,49 @@ h1 {
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .option h2 {
     font-size: 20px;
     color: #555;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.course-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-images a {
+    display: block;
+}
+
+.course-image {
+    width: 100%;
+    height: 200px; /* Altura padrão para a imagem */
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.course-image img:hover {
+    transform: scale(1.05);
 }
 
 .carousel {

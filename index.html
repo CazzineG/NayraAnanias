@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nayra Ananias</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-mobile.css">
+    <link rel="stylesheet" href="styles-tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles-desktop.css" media="(min-width: 1024px)">
 </head>
 <body>
     <div class="container">
@@ -14,13 +16,25 @@
         </section>
 
         <section class="options">
-            <div class="option" id="catalogo">
+            <div class="option" id="catalogo" onclick="downloadPDF('PDFs/Catalogo Nayra Ananias.pdf', 'Catalogo Nayra Ananias.pdf')">
                 <h2>Catálogo de Serviço</h2>
             </div>
             <div class="option" id="cursos">
                 <h2>Cursos</h2>
+                <div class="course-images">
+                    <a href="PDFs/By Perfect Lash.pdf" download="By Perfect Lash.pdf" onclick="event.stopPropagation()">
+                        <div class="course-image">
+                            <img src="images/by-perfect-lash.jpg" alt="By Perfect Lash">
+                        </div>
+                    </a>
+                    <a href="PDFs/Curso de Lash Iniciante.pdf" download="Curso de Lash Iniciante.pdf" onclick="event.stopPropagation()">
+                        <div class="course-image">
+                            <img src="images/curso-de-lash-iniciante.jpg" alt="Curso de Lash Iniciante">
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="option" id="agendamentos">
+            <div class="option" id="agendamentos" onclick="openWhatsApp()">
                 <h2>Agendamentos</h2>
             </div>
             <div class="option" id="avaliacoes">

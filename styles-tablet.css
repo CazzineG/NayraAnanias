@@ -1,0 +1,24 @@
+/* styles-tablet.css */
+@media (min-width: 768px) {
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .option {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .option h2 {
+        font-size: 20px;
+    }
+
+    .course-image {
+        height: 250px; /* Altura maior para tablets */
+    }
+}

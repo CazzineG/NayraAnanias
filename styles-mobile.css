@@ -1,0 +1,101 @@
+/* styles-mobile.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 120px; /* Tamanho reduzido para mobile */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 20px; /* Tamanho reduzido para mobile */
+    color: #333;
+}
+
+.options {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.option {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px; /* Padding reduzido para mobile */
+    margin-bottom: 15px; /* Margin reduzido para mobile */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option h2 {
+    font-size: 18px; /* Tamanho reduzido para mobile */
+    color: #555;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.course-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-images a {
+    display: block;
+}
+
+.course-image {
+    width: 100%;
+    height: 200px; /* Altura padrão para a imagem */
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.course-image img:hover {
+    transform: scale(1.05);
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    padding: 10px;
+}

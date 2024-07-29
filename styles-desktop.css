@@ -1,0 +1,30 @@
+/* styles-desktop.css */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px; /* Largura máxima para desktops */
+        margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+        padding: 20px; /* Adiciona padding para melhor espaçamento */
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .option {
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+
+    .option h2 {
+        font-size: 24px;
+    }
+
+    .course-image {
+        height: 300px; /* Altura ainda maior para desktops */
+    }
+}
